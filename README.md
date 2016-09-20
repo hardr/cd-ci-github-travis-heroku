@@ -16,3 +16,9 @@
 
 1. set up remote on GitHub
 1. push
+
+## Set up Travis
+
+1. add project repo
+1. do quick sanity check - add new test, push to GitHub, ensure tests run on Travis
+1. install travis command line tool `gem install travis`
