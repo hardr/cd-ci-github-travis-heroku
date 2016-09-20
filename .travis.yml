@@ -2,6 +2,16 @@ language:
 - node_js
 node_js:
 - '6'
+- '5'
 env:
   global:
   - NODE_ENV=test
+deploy:
+  provider: heroku
+  api_key:
+    secure: kOgZ77bYj3Eg+I/y8cD1RiUKL7cHh561olg/Pep1WOTP9ekaVFnYSSXPvdxQ2KvJIadUabiHp/Znm2D9d7okK8MggMhDUMxXqUwLcblGc4n1SWhRtZQJJPd3qHncLgFCy8w9orXhwXEXhxo9rsQbUWYegzieSo+WXHa5k1VwUZiYE602LWLMrz1DpiEpURYRj6E9tH3rTYXYPPMhlMR0i7utRAH5xcPLEnsYx542hAplXxNN3t0GSpCb/fr5NPal0YNPskWCPP11+i2Ttu82ts/NPM5lcwVn62pqx3rWa9FPQT9tuLazZY8smdXQF8z/NQ+gPfjdF3KYvjY8SmmnGhUcaR6O8czk4wkHglKA1iv/ml491+09wvpeWtC4T17KSeNU7cuQfpXXVbOiuzp1vDs6fOPghshJUT37z4l/SnSq0dNyA6NkMDdyGYtgM8zTPsn8b3mfrT+YPxl61TL31fs2Lrfce6vVSsN10ApMX4pW6DQWUOQE4/YFrj7Xc27a8jbj/yihDk7HuIEKuPI+LDCKZb/+8l8FfhyeBAyVDOa5Vs7YokrB1RRaoqN8D/mSDwR3mjCRsNypzVNEnOqWqZDHTpkEcyCE0FXOhJuK8diVpzFaERGJ4ReHIBiVfRJt9SoE676O0hGUhkpxI3pF24M48HOi/BpLjK0uxPruZI8=
+  app: immense-bayou-81782
+  on:
+    repo: hardr/cd-ci-github-travis-heroku
+    branch: master
+    node: '6'
